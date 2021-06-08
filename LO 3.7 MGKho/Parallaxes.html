@@ -1,0 +1,137 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/82616bef6b.js" crossorigin="anonymous"></script>
+
+   <title>UC 3 LO 3.6 - Parallaxes - MGKho</title>
+
+   <style>
+      header{
+         background: url(images/evilcat.jpg);
+         background-size: cover;
+         background-position: center;
+         min-height: 1000px;
+      }
+      .section{
+         padding-top: 4vw;
+         padding-bottom: 4vw;
+      }
+      @media screen and (max-width: 670px){
+         header{
+            min-height: 500px;
+         }
+      }
+   </style>
+
+</head>
+<body>
+
+   <div class="container">
+      <h1>UC 3 LO 3.6 - Parallaxes - MGKho</h1>
+         <h4>Parallaxes</h4>
+   </div>
+
+   <!-- navbar -->
+   <header>
+      <nav class="nav-wrapper transparent">
+         <div class="container">
+            <a href="#" class="brand-logo black-text">Kitty Witty</a>
+            <a href="" class="sidenav-trigger" data-target="mobile-menu">
+               <i class="material-icons black-text">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="#" class="black-text">Photos</a></li>
+               <li><a href="#" class="black-text">Info</a></li>
+               <li><a href="#" class="black-text">Contact</a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+               <li><a href="#" class="">Photos</a></li>
+               <li><a href="#" class="">Info</a></li>
+               <li><a href="#" class="">Contact</a></li>
+            </ul>
+         </div>   
+      </nav>
+   </header>
+
+   <!-- photo / grid -->
+   <section class="container section" id="photos">
+      <!-- 1st row -->
+      <div class="row">
+         <div class="col s12 l4">
+            <img src="images/whitecat.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">White Cat</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero rerum recusandae voluptates exercitationem autem error ea. Error atque optio suscipit explicabo eveniet dignissimos consequuntur at commodi, voluptatibus eligendi consequatur!</p>
+         </div>
+      </div>
+      <!-- 2nd row -->
+      <div class="row">
+         <div class="col s12 l4 ">
+            <img src="images/kitty.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Kitty</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero rerum recusandae voluptates exercitationem autem error ea. Error atque optio suscipit explicabo eveniet dignissimos consequuntur at commodi, voluptatibus eligendi consequatur!</p>
+         </div>
+      </div>
+      <!-- 3rd row -->
+      <div class="row">
+         <div class="col s12 l4 push-l7 offset-l1">
+            <img src="images/starry.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l6 pull-l5 right-align offset-l1">
+            <h2 class="indigo-text text-darken-4">Starry</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero rerum recusandae voluptates exercitationem autem error ea. Error atque optio suscipit explicabo eveniet dignissimos consequuntur at commodi, voluptatibus eligendi consequatur!</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Parallax -->
+   <div class="parallax-container">
+      <div class="parallax">
+         <img src="images/starrytwo.jpg" alt="" class="responsive-img">
+      </div>
+   </div>
+
+   <!-- Services and Tabs -->
+   <div class="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque provident ipsam, sit blanditiis cupiditate sapiente voluptatem, qui eveniet aspernatur, officiis laborum est odit cum harum alias beatae repellendus placeat?</p>
+   </div>
+
+   <!-- Parallax -->
+   <div class="parallax-container">
+      <div class="parallax">
+         <img src="images/starry.jpg" alt="" class="responsive-img">
+      </div>
+   </div>
+   <div class="container">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem neque provident ipsam, sit blanditiis cupiditate sapiente voluptatem, qui eveniet aspernatur, officiis laborum est odit cum harum alias beatae repellendus placeat?</p>
+   </div>
+   
+   <!-- contact form -->
+
+
+   <!-- JQuery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+   <script>
+      $(document).ready(function(){
+         $('.sidenav').sidenav();
+         $('.materialboxed').materialbox();
+         $('.parallax').parallax();
+      });
+   </script>
+   
+
+</body>
+</html>

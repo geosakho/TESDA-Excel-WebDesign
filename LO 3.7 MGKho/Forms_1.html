@@ -1,0 +1,190 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/82616bef6b.js" crossorigin="anonymous"></script>
+
+   <title>UC 3 LO 3.6 - Forms 1- MGKho</title>
+
+   <style>
+      header{
+         background: url(images/evilcat.jpg);
+         background-size: cover;
+         background-position: center;
+         min-height: 1000px;
+      }
+      .section{
+         padding-top: 4vw;
+         padding-bottom: 4vw;
+      }
+      .tabs .indicator{
+         background-color: purple;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+         background: transparent;
+      }
+      .input-field .prefix.active{
+         color: red;
+      }
+      @media screen and (max-width: 670px){
+         header{
+            min-height: 500px;
+         }
+      }
+   </style>
+
+</head>
+<body>
+
+   <div class="container">
+      <h1>UC 3 LO 3.6 - Forms 1 - MGKho</h1>
+         <h4>Forms 1</h4>
+   </div>
+
+   <!-- navbar -->
+   <header>
+      <nav class="nav-wrapper transparent">
+         <div class="container">
+            <a href="#" class="brand-logo black-text">Kitty Witty</a>
+            <a href="" class="sidenav-trigger" data-target="mobile-menu">
+               <i class="material-icons black-text">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="#" class="black-text">Photos</a></li>
+               <li><a href="#" class="black-text">Info</a></li>
+               <li><a href="#" class="black-text">Contact</a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+               <li><a href="#" class="">Photos</a></li>
+               <li><a href="#" class="">Info</a></li>
+               <li><a href="#" class="">Contact</a></li>
+            </ul>
+         </div>   
+      </nav>
+   </header>
+
+   <!-- photo / grid -->
+   <section class="container section" id="photos">
+      <!-- 1st row -->
+      <div class="row">
+         <div class="col s12 l4">
+            <img src="images/whitecat.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">White Cat</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero rerum recusandae voluptates exercitationem autem error ea. Error atque optio suscipit explicabo eveniet dignissimos consequuntur at commodi, voluptatibus eligendi consequatur!</p>
+         </div>
+      </div>
+      <!-- 2nd row -->
+      <div class="row">
+         <div class="col s12 l4 ">
+            <img src="images/kitty.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Kitty</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero rerum recusandae voluptates exercitationem autem error ea. Error atque optio suscipit explicabo eveniet dignissimos consequuntur at commodi, voluptatibus eligendi consequatur!</p>
+         </div>
+      </div>
+      <!-- 3rd row -->
+      <div class="row">
+         <div class="col s12 l4 push-l7 offset-l1">
+            <img src="images/starry.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l6 pull-l5 right-align offset-l1">
+            <h2 class="indigo-text text-darken-4">Starry</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis libero rerum recusandae voluptates exercitationem autem error ea. Error atque optio suscipit explicabo eveniet dignissimos consequuntur at commodi, voluptatibus eligendi consequatur!</p>
+         </div>
+      </div>
+   </section>
+
+   <!-- Parallax -->
+   <div class="parallax-container">
+      <div class="parallax">
+         <img src="images/starrytwo.jpg" alt="" class="responsive-img">
+      </div>
+   </div>
+
+   <!-- Services and Tabs -->
+   <section class="container section" if="services">
+      <div class="row">
+         <div class="col s12 l4">
+            <h2 class="indigo-text darken-4">What we do...</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quia at et aperiam omnis dicta pariatur est reiciendis officia placeat cumque fugit autem, impedit aliquid sunt labore? Voluptatum, aliquam consequuntur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt mollitia eius nobis vitae modi placeat dolor exercitationem sequi, minima libero eos esse repellat aliquam inventore ad ab labore odio.</p>
+         </div>
+         <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+               <li class="tab col s6">
+                  <a href="#photography" class="indigo-text text-darken waves-effect waves-purple">Photography</a>
+               </li>
+               <li class="tab col s6">
+                  <a href="#editing" class="indigo-text text-darken waves-effect waves-green">Editing</a>
+               </li>
+            </ul>
+            <div class="col s12" id="photography">
+               <p class="flow-text indigo-text text-darken-4">PHOTOGRAPHY</p>
+               <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque eius dolore quae maxime ut, perspiciatis molestiae reiciendis doloribus quisquam sequi minima aperiam in cum ea laudantium error iste repellendus!</P>
+            </div>
+            <div class="col s12" id="editing">
+               <p class="flow-text indigo-text text-darken-4">EDITING</p>
+               <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex eaque eius dolore quae maxime ut, perspiciatis molestiae reiciendis doloribus quisquam sequi minima aperiam in cum ea laudantium error iste repellendus!</P>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Parallax -->
+   <div class="parallax-container">
+      <div class="parallax">
+         <img src="images/starry.jpg" alt="" class="responsive-img">
+      </div>
+   </div>
+   
+   <!-- contact form -->
+   <section class="container section" id="contact">
+      <div class="row">
+         <div class="col s12 l5">
+            <h2 class="indigo-text darken-4">Get In Touch</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae rem ipsam corporis sunt, consectetur aspernatur recusandae. Suscipit quasi, dolores illum dolorum provident error quae rerum quis possimus sequi! Nam, asperiores.</p>
+         </div>
+         <div class="col s12 l5">
+            <form action="">
+               <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="email">
+                  <label for="email">Your Email</label>
+               </div>
+               <div class="input-field">
+                  <i class="material-icons prefix">message</i>
+                  <textarea id="message" class="materialize-textarea" cols="30" rows="10"></textarea>
+                  <label for="message">Your Message</label>
+               </div>
+            </form>
+         </div>
+      </div>
+   </section>
+
+   <!-- JQuery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+   <script>
+      $(document).ready(function(){
+         $('.sidenav').sidenav();
+         $('.materialboxed').materialbox();
+         $('.parallax').parallax();
+         $('.tabs').tabs();
+         $('.input-field').input-field();
+      });
+   </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,882 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/82616bef6b.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Courier+Prime:wght@700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <!-- CSS link -->
+   <link rel="stylesheet" href="styles.css">
+   <!-- Google Maps -->
+   <link rel="stylesheet" type="text/css" href="./style.css" />
+   <script src="./index.js"></script>
+   <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+      const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+      const map = new google.maps.Map(document.getElementById("map"), {
+         zoom: 4,
+         center: uluru,
+      });
+        // The marker, positioned at Uluru
+      const marker = new google.maps.Marker({
+         position: uluru,
+         map: map,
+      });
+      }
+   </script>
+
+   <title>Excel_CWD_Task_Sheet_MGKho</title>
+
+   <style>
+      header{
+         background-size: right;
+         background-position: center;
+      }
+      a.about{
+         white-space: normal; 
+         margin: 0;
+      }
+      h1.petopia{
+         font-family: 'Courier Prime', monospace;
+         font-size: 700%;
+         margin-top: 100;
+         margin-bottom: 10;
+      }
+      h1.f1{
+         font-family: 'Courier Prime', monospace;
+         font-size: 5vw;
+      }
+      p.next{
+         font-family: 'Courier Prime', monospace;
+         font-size: 150%;
+         margin: 0;
+      }
+      nav {
+         height: 100px;
+         line-height: 100px;
+      }
+      .nav-wrapper{
+         background-color: #322d31 !important;
+      }
+      nav.b{
+         font-family: 'Coiny', cursive;
+      }
+      .section{
+         padding-top: 4vw;
+         padding-bottom: 4vw;
+      }
+      .tabs .indicator{
+         background-color: purple;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+         background: transparent;
+      }
+      .input-field .prefix.active{
+         color: red;
+      }
+      a{
+         border-radius: 120px;
+         font-family: 'Coiny', cursive;
+         font-size: 1.5vw;
+         margin: 0;
+      }
+      img.ash{
+         width:80%; margin: 3% 0% 0% 0%;
+      }
+      a.btn1{
+         background-color: #373737 !important;
+         margin-left: 10;
+         box-shadow: 5px 5px #888888;
+         padding: 5% 9%;
+      }
+      a.btn2{
+         background-color: #564C4D !important;
+         margin-left: 10;
+         box-shadow: 5px 5px #888888;
+         padding: 5% 9%;
+      }
+      a.btn3{
+         background-color: #787276 !important;
+         box-shadow: 5px 5px #888888;
+         padding: 5% 20%;
+         margin: 3% 10% 10% 10%;
+      }
+      a.btn4{
+         background-color: #E5E5E5 !important;
+         box-shadow: 5px 5px #888888;
+         color: #564C4D !important;
+         font-size: 2vw;
+         padding: 3% 3%;
+         margin: 12% 10% 10% 5%;
+      }
+      div.fourth{
+         height:auto; width:cover; background-color: #564C4D; margin:1% 0%;
+      }
+      div.fifth{
+         height:auto; width:cover; background-color: #655967; margin:3% 0%;
+      }
+      img.mimi{
+         width:100%; height:auto; padding: 0% 0%;
+      }
+      a.btn5{
+         background-color: #564C4D !important;
+         box-shadow: 5px 5px #888888;
+         font-family: 'Courier Prime', monospace;
+         color: #E5E5E5 !important;
+         font-size: 2vw;
+         padding: 2% 2%;
+         margin: 25% 10% 10% 5%;
+      }
+      a.btn6{
+         background-color: #787276 !important;
+         box-shadow: 5px 5px #888888;
+         width: 70px;
+      }
+      h1.adoption{
+         padding: 5% 0% 0%; font-size:3vw; margin-bottom: 3%;
+      }
+      div.gallery{
+            margin-bottom:7%;
+      }
+      a.committed{
+         background-color: #E5E5E5; font-family: 'Courier Prime', monospace;
+         font-size: 1.5vw; position:absolute; padding: 1% 5%; margin: 10% 20% 10% 20%;
+         border-radius: 10px; background: #fff; /* fallback color for old browsers */background: rgba(255, 255, 255, 0.5);
+      }
+
+      /* carousel */
+      .carousel { 
+         min-height: 550px;  
+      }
+      @font-face {
+         font-family: 'Material Icons';
+         font-style: normal;
+         font-weight: 400;
+         src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v18/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+      }
+
+      .material-icons {
+         font-family: 'Material Icons';
+         font-weight: normal;
+         font-style: normal;
+         font-size: 24px;
+         line-height: 1;
+         letter-spacing: normal;
+         text-transform: none;
+         display: inline-block;
+         white-space: nowrap;
+         word-wrap: normal;
+         direction: ltr;
+         -moz-font-feature-settings: 'liga';
+         -moz-osx-font-smoothing: grayscale;
+      }
+      .middle-indicator{
+         position:absolute;
+         top:50%;
+      }
+      .middle-indicator-text{
+         font-size: 4.2rem;
+      }
+      a.middle-indicator-text{
+         color:white !important;
+      }
+      .content-indicator{
+         width: 64px;
+         height: 64px;
+         background: none;
+         -moz-border-radius: 50px;
+         -webkit-border-radius: 50px;
+         border-radius: 50px; 
+      }
+      a.download{
+         position:absolute; padding: 1% 2%; margin: 30% 40% 40% 42%; white-space: nowrap;
+      }
+      a.submitapp{
+         box-shadow: 5px 5px; color:#564C4D; background-color: #C4C4C4 !important; 
+         position:absolute; padding: 1% 2%; margin: 40% 30% 40% 40%; white-space: nowrap;
+      }
+
+   /* maps */
+      #map{
+         height: 400px;
+        /* The height is 400 pixels */
+         width: 100%;
+        /* The width is the width of the web page */
+      }
+      a.footr{
+         font-family: 'Courier Prime', monospace; font-size: 1vw;
+      }
+      i.fab{
+         margin: -1% 5% 0%;
+         color: white;
+      }
+      img.logofoot{
+         margin: -3% -3% -2%;
+      }
+
+      /* MEDIA SCREEN - TABLET*/
+      @media screen and (max-width: 1025px){
+         html, body {
+            overflow-x: hidden;
+         }
+         a{
+            border-radius: 120px;
+            font-family: 'Coiny', cursive;
+            font-size: 2.5vw;
+            margin: 0;
+         }
+         h1.petopia{
+            font-family: 'Courier Prime', monospace;
+            font-size: 500%;
+            margin-top: 20%;
+            margin-bottom: 10;
+            margin-left: 20;
+         }
+         p.next{
+            font-family: 'Courier Prime', monospace;
+            font-size: 150%;
+            margin-left: 20;
+         }
+         /* carousell prev & next button */
+         a.movePrevCarousel{
+            font-size:30vw;
+            position: relative;
+            top: 20%;
+            left:30%
+         }
+         a.moveNextCarousel{
+            position: relative;
+            top: 20%;
+         }
+         a.btn1{
+            background-color: #373737 !important;
+            margin: 3% 0% 0% 20%;
+            box-shadow: 5px 5px #888888;
+            padding: 5% 20%;
+         }
+         a.btn2{
+            background-color: #564C4D !important;
+            margin: 3% 0% 0% 20%;
+            box-shadow: 5px 5px #888888;
+            padding: 5% 20%;
+            white-space: nowrap;
+         }
+         a.btn3{
+            background-color: #787276 !important;
+            box-shadow: 5px 5px #888888;
+            padding: 5% 15%;
+            margin: 3% 1% 10% 17%;
+            white-space: nowrap;
+         }
+         a.btn4{
+            background-color: #E5E5E5 !important;
+            box-shadow: 5px 5px #888888;
+            color: #564C4D !important;
+            font-size: 3vw;
+            padding: 1% 1%;
+            margin: 10% 10% -3% 5%;
+         }
+         a.btn5{
+            background-color: #564C4D !important;
+            box-shadow: 5px 5px #888888;
+            font-family: 'Courier Prime', monospace;
+            color: #E5E5E5 !important;
+            font-size: 2vw;
+            padding: 2% 2%;
+            margin: 20% 10% 10% 5%;
+         }
+         a.btn7{
+            background-color: #E5E5E5 !important;
+            box-shadow: 5px 5px #888888;
+            color: #564C4D !important;
+            font-size: 3vw;
+            padding: 1% 1%;
+            margin: 7% 10% 7% 5%;
+         }
+         img.ash{
+            position: relative;
+            float: right;
+            width:100%; 
+            margin: 30% -40% 0% 0%;
+         }
+         div.fourth{
+         height:auto; width:cover; background-color: #564C4D; margin:-27% 0% 10%;
+         }
+         div.fifth{
+            height:auto; width:cover; background-color: #655967; margin:-6% 0%;
+         }
+         a.btn6{
+            background-color: #787276 !important;
+            box-shadow: 5px 5px #888888;
+            width: 200px;
+            position: absolute; padding: 1% 0% 1% 0%; margin: 30% -55%; font-size: 3vw;
+         }
+         h1.adoption{
+         padding: 5% 0% 0%; font-size:3vw; margin-bottom: -2%
+         }
+         div.gallery{
+            margin-bottom:20%
+         }
+         a.download{
+            position:absolute; padding: 1% 2%; margin: 30% 40% 40% 37%; white-space: nowrap;
+         }
+         a.submitapp{
+            box-shadow: 5px 5px; color:#564C4D; background-color: #C4C4C4 !important; 
+            position:absolute; padding: 1% 2%; margin: 40% 30% 40% 34%; white-space: nowrap;
+         }
+         i.fab{
+         margin: -1% 5% -1%;
+         color: white;
+         }
+         img.logofoot{
+            margin: -5%;
+         }
+         
+      }
+
+
+      /* MEDIA SCREEN - PHONE*/
+      @media screen and (max-width: 500px){
+         html, body {
+            overflow-x: hidden;
+         }
+         a{
+            border-radius: 120px;
+            font-family: 'Coiny', cursive;
+            font-size: 2.5vw;
+            margin: 0;
+         }
+         h1.petopia{
+            font-family: 'Courier Prime', monospace;
+            font-size: 300%;
+            margin-top: 20%;
+            margin-bottom: 1;
+            margin-left: 20;
+         }
+         p.next{
+            font-family: 'Courier Prime', monospace;
+            font-size: 100%;
+            margin-left: 20;
+         }
+         /* carousell prev & next button */
+         a.movePrevCarousel{
+            font-size:30vw;
+            position: relative;
+            top: 20%;
+            left:30%
+         }
+         a.moveNextCarousel{
+            position: relative;
+            top: 20%;
+         }
+         a.btn1{
+            background-color: #373737 !important;
+            margin: 1% 0% 0% 20%;
+            box-shadow: 5px 5px #888888;
+            padding: 5% 20%;
+         }
+         a.btn2{
+            background-color: #564C4D !important;
+            margin: 3% 0% 0% 20%;
+            box-shadow: 5px 5px #888888;
+            padding: 5% 20%;
+            white-space: nowrap;
+         }
+         a.btn3{
+            background-color: #787276 !important;
+            box-shadow: 5px 5px #888888;
+            padding: 5% 15%;
+            margin: 3% 1% 10% 17%;
+            white-space: nowrap;
+         }
+         a.btn4{
+            background-color: #E5E5E5 !important;
+            box-shadow: 5px 5px #888888;
+            color: #564C4D !important;
+            font-size: 3vw;
+            padding: 1% 1%;
+            margin: 10% 10% -3% 5%;
+         }
+         a.btn5{
+            background-color: #564C4D !important;
+            box-shadow: 5px 5px #888888;
+            font-family: 'Courier Prime', monospace;
+            color: #E5E5E5 !important;
+            font-size: 2vw;
+            padding: 2% 2%;
+            margin: 20% 10% 10% 5%;
+         }
+         a.btn7{
+            background-color: #E5E5E5 !important;
+            box-shadow: 5px 5px #888888;
+            color: #564C4D !important;
+            font-size: 3vw;
+            padding: 1% 1%;
+            margin: 7% 10% 7% 5%;
+         }
+         img.ash{
+            position: relative;
+            float: right;
+            width:100%; 
+            margin: 60% -30% 0% 0%;
+         }
+         div.fourth{
+            height:auto; width:cover; background-color: #564C4D; margin:-102% 0% 10%;
+         }
+         div.fifth{
+            height:auto; width:cover; background-color: #655967; margin:-% 0%;
+         }
+         a.btn6{
+            background-color: #787276 !important;
+            box-shadow: 5px 5px #888888;
+            width: 75px;
+            position: absolute; padding: 1% 0% 1% 0%; margin: 30% -55%; font-size: 3vw;
+         }
+         h1.adoption{
+         padding: 5% 0% 0%; font-size:3vw; margin-bottom: -2%
+         }
+         h1.f1{
+            margin-bottom: -2%;
+         }
+         div.gallery{
+            margin: 0% 0% 20%;
+         }
+         a.download{
+            position:absolute; padding: 1% 2%; margin: 30% 40% 40% 37%; white-space: nowrap;
+         }
+         a.submitapp{
+            box-shadow: 5px 5px; color:#564C4D; background-color: #C4C4C4 !important; 
+            position:absolute; padding: 1% 2%; margin: 40% 30% 40% 34%; white-space: nowrap;
+         }
+         i.fab{
+         margin: -1% 5% -1%;
+         color: white;
+         }
+         img.logofoot{
+            margin: -5%;
+         }
+         
+      }
+      
+   </style>
+
+</head>
+<body>
+
+   <!-- navbar -->
+   <header>
+      <div class="navbar-fixed">
+      <nav class="b nav-wrapper">
+         <div class="container">
+            <a href="#" class="a brand-logo"><img src="images/petopia.png" width="100" height="auto"></a>
+            <a href="" class="sidenav-trigger" data-target="slide-out">
+               <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="#stories" class="about">ABOUT PET ADOPTION</a></li>
+               <li><a href="#form" class="">ADOPT</a></li>
+               <li><a href="#form" class="">VOLUNTEER</a></li>
+               <li><a href="#contact" class="">DONATE</a></li>
+               <li><a href="#contact" class="">SPONSOR</a></li>
+               <li><a href="#contact" class="">BOOK SPAY/NEUTER
+               </a></li>
+            </ul>            
+         </div>
+      </div>
+         <!-- <ul class="sidenav grey lighten-2" id="mobile-menu">
+               <li><a href="#stories" class="about">ABOUT PET ADOPTION</a></li>
+               <li><a href="#form" class="">ADOPT</a></li>
+               <li><a href="#form" class="">VOLUNTEER</a></li>
+               <li><a href="#contact" class="">DONATE</a></li>
+               <li><a href="#contact" class="">SPONSOR</a></li>
+               <li><a href="#contact" class="">BOOK SPAY/NEUTER</a></li>
+         </ul>  -->
+      </nav>
+      <ul id="slide-out" class="sidenav">
+         <li><div class="user-view">
+            <div class="background">
+               <img src="images/petopia colored.png" style="width:auto; height:100%; margin-left:10%;">
+            </div>
+            <a href="#user"><img class="circle" src="images/geo.jpg"></a>
+            <br><br><br>
+            <a href="#email"></a>
+         </div></li>
+         <li><a href="https://google.com" target="_blank">www.petopia.com</a></li>
+         <li><div class="divider"></div></li>
+               <li><a href="#stories" class="about">ABOUT PET ADOPTION</a></li>
+               <li><a href="#form" class="">ADOPT</a></li>
+               <li><a href="#form" class="">VOLUNTEER</a></li>
+               <li><a href="#contact" class="">DONATE</a></li>
+               <li><a href="#contact" class="">SPONSOR</a></li>
+               <li><a href="#contact" class="">BOOK SPAY/NEUTER</a></li>
+      </ul>
+         <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      </div>
+   </header>
+
+   <!-- 1st partition -->
+   <div style="height:auto; width:100%; background-color: #636363;">
+      <div class="container">
+      <div class="row">
+         <div class="col s6 l6 white-text">
+            <h1 class="petopia">#PETOPIA </h1>
+            <p class="next" style="white-space: nowrap;">YOUR NEXT BEST FRIEND IS WAITING...</p>
+            <br>
+            <a href="#fourth" class="btn1 white-text waves-effect waves-light">FIND A DOG</a>
+            <a href="#fourth" class="btn2 white-text waves-effect waves-light">FIND A CAT</a>
+            <a href="#location" class="btn3 white-text waves-effect waves-light">FIND A SHELTER</a>
+         </div>
+         <div class="col s6 l6 pull-s1">
+         <!-- <div style="float:right; position:absolute; left:500px;"> -->
+            <img class="ash" src="images/ASH PNG.png" >
+         </div>
+         </div>
+      </div>
+      </div>
+   </div>
+
+      <!-- 2nd partition -->
+      <h1 class="f1 center" >YOUR ADOPTION JOURNEY</h1>
+      <br><br>
+      <div class="container">
+      <div class="row">
+         <div class="col s3 l3">
+            <center><i class="material-icons" style="font-size:10vw; color:#373737;">search</i></center>
+         </div>
+         <div class="col s3 l3">
+            <center><i class="material-icons center" style="font-size:11vw;color:#787276;">edit</i></center>
+         </div>
+         <div class="col s3 l3">
+            <center><i class="material-icons" style="font-size:11vw;color:#564C4D;">personal_video</i></center>
+         </div>
+         <div class="col s3 l3">
+            <center><i class="material-icons" style="font-size:11vw;color:#655967;">pets</i></center>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:2vw; color:#373737;">SEARCH</a></center>
+         </div>
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:2vw; color:#787276;">FILL OUT</a></center>
+         </div>
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:2vw; color:#564C4D;">MEET</a></center>
+         </div>
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:2vw; color:#655967;">ADOPT</a></center>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:1.5vw; color:#373737; font-family: 'Courier Prime', monospace;">BROWSE ALL PETS IN OUR GALLERY</a></center>
+         </div>
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:1.5vw; color:#787276; font-family: 'Courier Prime', monospace;">SUBMIT THE APPLICATION FORM</a></center>
+            <a href="#form" class="here scrollspy waves-effect waves-dark" style="font-size:1.5vw; color:#787276; font-family: 'Courier Prime', monospace;"><center><u>HERE</u></a></center>
+         </div>
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:1.5vw; color:#564C4D; font-family: 'Courier Prime', monospace;">PASS THE INTERVIEW</a></center>
+         </div>
+         <div class="col s3 l3">
+            <center><a class="" style="font-size:1.5vw; color:#655967; font-family: 'Courier Prime', monospace;">MEET YOUR BEST FRIEND!</a></center>
+         </div>
+      </div>
+      </div>
+
+      <!-- 3rd partition -->
+         <div class="carousel carousel-slider center scrollspy " data-indicators="true" style="top:20px" id="stories">
+            <div class="carousel-fixed-item top middle-indicator" style="margin:0%;">
+            <div class="left">
+               <a href="Previo" class="movePrevCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons left  middle-indicator-text hide-on-small-only">chevron_left</i></a>
+            </div>
+            <div class="right">
+            <a href="Siguiente" class=" moveNextCarousel middle-indicator-text waves-effect waves-light content-indicator"><i class="material-icons right middle-indicator-text hide-on-small-only">chevron_right</i></a>
+            </div>
+            </div>
+
+            <div class="carousel-item" href="#one!">
+               <a href="https://bluebuffalo.com/articles/cat/adopting-a-cat-from-a-shelter/" target="_blank" class="btn4 waves-effect waves-dark" style="position:absolute;">SASHA & COOKIE</a>
+               <p class="next white-text" style="position:absolute; font-size:2.5vw; margin: 5%;">ADOPTION STORIES</p>
+               <a href="https://www.youtube.com/watch?v=ksrTNt__MJg" target="_blank" class="btn5 waves-effect waves-light" style="position:absolute;"><i class="material-icons left" style="font-size:2vw;">play_arrow</i>PLAY VIDEO</a>
+                  <img src="images/adult cat.jpg" alt="" style="margin:0; height:auto; width:100%;">
+            </div>
+         
+            <div class="carousel-item" href="#two!">
+               <a href="#!" class="btn4 waves-effect waves-dark" style="position:absolute;">ROB & COCO</a>
+               <p class="next white-text" style="position:absolute; font-size:2.5vw; margin: 5%;">ADOPTION STORIES</p>
+               <a href="#!" class="btn5 waves-effect waves-light" style="position:absolute;"><i class="material-icons left" style="font-size:2vw;">play_arrow</i>PLAY VIDEO</a>
+                  <img src="images/dog love.jpg" alt="" style="margin:0; height:auto; width:100%;">
+            </div>
+
+            <div class="carousel-item" href="#three!">
+               <a href="#!" class="btn4 waves-effect waves-dark" style="position:absolute;">JESS & PICO</a>
+               <p class="next black-text" style="position:absolute; font-size:2.5vw; margin: 5%;">ADOPTION STORIES</p>
+               <a href="#!" class="btn5 waves-effect waves-light" style="position:absolute;"><i class="material-icons left" style="font-size:2vw;">play_arrow</i>PLAY VIDEO</a>
+                  <img src="images/puppy.jpg" alt="" style="margin:0; height:auto; width:100%;">
+            </div>
+
+            <div class="carousel-item" href="#four!">
+               <a href="#!" class="btn4 waves-effect waves-dark" style="position:absolute; font-size:1.5vw;">SAM, KIT, & CHEEZ</a>
+               <p class="next black-text" style="position:absolute; font-size:2.5vw; margin: 5%;">ADOPTION STORIES</p>
+               <a href="#!" class="btn5 waves-effect waves-light" style="position:absolute;"><i class="material-icons left" style="font-size:2vw;">play_arrow</i>PLAY VIDEO</a>
+                  <img src="images/cat kitten.jpg" alt="" style="margin:0; height:auto; width:100%;">
+            </div>
+         </div>
+
+      <!-- 4th partition -->
+      <div class="fourth scrollspy"  id="fourth">
+         <h1 class="adoption f1 center white-text" >PETS AVAILABLE FOR ADOPTION</h1>
+         <br><br>
+         <div class="container">
+            
+         <div class="row">
+            <div class="gallery col s3 l3 l1 pull-l1" >
+               <div class="card">
+                  <div class="card-image">
+                     <img class="mimi" src="images/cat 1.jpg" >
+                     <center><a href="" class="halfway-fab waves-effect waves-light white" style="color:#564C4D;">MIMI</a></center>
+                  </div>
+               </div>
+            </div>
+            <div class="col s3 l3 pull-l1">
+               <div class="card">
+                  <div class="card-image">
+                     <img src="images/dog 1.jpg" class="mimi">
+                     <center><a href="" class="halfway-fab waves-effect waves-light white" style="color:#564C4D">DOGE</a></center>
+                  </div>
+               </div>
+            </div>
+            <div class="col s3 l3 pull-l1">
+               <div class="card">
+                  <div class="card-image">
+                     <img src="images/dog 2.jpg" class="mimi">
+                     <center><a href="" class="halfway-fab waves-effect waves-light white" style="color:#564C4D">THE TRIPIES</a></center>
+                  </div>
+               </div>
+            </div>
+            <div class="col s3 l3 pull-l1">
+               <div class="card">
+                  <div class="card-image">
+                     <img src="images/cat 3.jpg" class="mimi">
+                     <center><a href="" class="halfway-fab waves-effect waves-light white" style="color:#564C4D">WHITEY</a></center>
+                  </div>
+               </div>
+            </div>
+            <a href="https://www.freeimages.com/search/cat-and-dog" target="_blank" class="btn6 white-text waves-effect waves-light hide-on-med-and-down" style="position: absolute; padding: 1% 1%; margin: 3% -3%; font-size:vw;">M&nbsp;
+               <br>
+               O
+               <br>
+               R 
+               <br>
+               E<i class="material-icons " style="font-size:2vw">call_received</i></a>
+               <a href="https://www.freeimages.com/search/cat-and-dog" target="_blank" class="btn6 white-text waves-effect waves-light hide-on-large-only center" >&nbsp;M O R E</a>
+         </div>
+         </div>
+      </div>
+
+   <!-- 5th partition - Questions -->
+   <div class="fifth" >
+      <h1 class="f1 center white-text" style="padding: 5% 0% 1%; font-size:3vw;">FREQUENTLY ASKED QUESTION</h1>
+      <br><br>
+      <div class="container">
+         <div class="row">
+            <div class="col s12 l6">
+               <ul class="collapsible popout">
+                  <li>
+                     <div class="collapsible-header" style="font-family: 'Courier Prime', monospace;
+                     font-size: 130%; margin: 0%; padding: 2%;"><i class="material-icons right">add</i>DO I NEEDN AN APPOINTMENT?</div>
+                     <div class="collapsible-body" style="font-family: 'Courier Prime', monospace;
+                     font-size: 120%; background-color: #C5C6D0;"><span>Yes. All visitations must be booked through our website. We will only accommodate guests within their appointed schedule, so please arrive on time.</span></div>
+                  </li>
+                  <li>
+                     <div class="collapsible-header" style="font-family: 'Courier Prime', monospace;
+                     font-size: 130%; margin: 0%; padding: 2%;"><i class="material-icons right">add</i>WHY DO YOU REQUIRE 2 VISITS?</div>
+                     <div class="collapsible-body" style="font-family: 'Courier Prime', monospace;
+                     font-size: 120%; background-color: #C5C6D0;"><span>Because you are taking home a new family member, it’s important that you are 100% certain about your decision. One visit is not enough to get to know an animal. You need to know if their personality and temperament are a good match with yours and other members of your family; otherwise, you may regret your decision and end up with an unhappy pet. During the visits, we recommend that you take your current pets and other family members with you to see how they interact.</span></div>
+                  </li>
+                  <li>
+                     <div class="collapsible-header" style="font-family: 'Courier Prime', monospace;
+                     font-size: 130%; margin: 0%; padding: 2%;"><i class="material-icons right">add</i>CAN MY ADOPTION GET DENIED?</div>
+                     <div class="collapsible-body" style="font-family: 'Courier Prime', monospace;
+                     font-size: 120%; background-color: #C5C6D0;"><span>Yes. We will deny an adoption application if we think that it’s better to keep the animal at the shelter. Some reasons for denied applications include: Not being able to keep their pet indoors, incompatibility with the household (some pets are not good with children or other animals), current pets in neglected condition, plus other circumstances that may be damaging to the health, safety, and happiness of our shelter animals.</span></div>
+                  </li>
+                  <li>
+                     <div class="collapsible-header" style="font-family: 'Courier Prime', monospace;
+                     font-size: 130%; margin: 0%; padding: 2%;"><i class="material-icons right">add</i>CAN I RETURN MY PET?</div>
+                     <div class="collapsible-body" style="font-family: 'Courier Prime', monospace;
+                     font-size: 120%; background-color: #C5C6D0;"><span>Anyone who wants a pet must be 100% committed to keeping their new family member. That is why adoption applicants go through multiple interviews and visits. HOWEVER, if you truly can’t keep your adopted pet, please don’t abandon them on the streets or with strangers. Please return them to us so we can find another home for them.</span></div>
+                  </li>
+                  </ul>
+                  <br><br>
+            </div>
+               <div class="col s12 l6">
+                  <h1 class="f1 white-text" style="font-size:1.5vw; padding: 0% 0% 0% 0%; margin: -4% 0% 0% 0%; ">GOT QUESTIONS?</h1>
+                  <ul class="tabs">
+                     <li class="tab col s6">
+                        <a href="#map" class="scrollspy black-text text-darken waves-effect waves-purple" id="location">LOCATION</a>
+                     </li>
+                     <li class="tab col s6">
+                        <a href="#contact" class="scrollspy black-text text-darken waves-effect waves-teal" id="fifth">Contact</a>
+                     </li>
+                  </ul>
+                  <div class="scrollspy" id="map" style="margin: 0% 0% 10%;"></div>
+                  <div class="col s12 scrollspy" id="contact">
+                     <form action="">
+                        <div class="input-field">
+                           <i class="material-icons prefix" style="color:white;">person</i>
+                           <input type="email" id="name">
+                           <label for="name" style="white-text">Your Name</label>
+                        </div>
+                        <div class="input-field">
+                           <i class="material-icons prefix" style="color:white;">email</i>
+                           <input type="email" id="email">
+                           <label for="email" style="white-text">Your Email</label>
+                        </div>
+                        <div class="input-field">
+                           <i class="material-icons prefix" style="color:white;" >message</i>
+                           <textarea id="message" class="materialize-textarea" cols="50" rows="10"></textarea>
+                           <label for="message">Your Message</label>
+                        </div>
+                        <div class="input-field">
+                           <input type="text" id="date" class="datepicker">
+                           <label for="date" id="do i" class="scrollspy">Choose an apointment</label>
+                        </div>
+                        <div class="input-field center">
+                           <a href="#!" class="btn7 waves-effect waves-light" >Submit</a>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<!-- 6th partition -->
+<div class="">
+
+   <a href="#!" class="committed black-text waves-effect waves-light scrollspy" >we are committed to finding a loving home and family
+      for these fur babies. we believe that every living organism deserves
+      to be loved and have a second chance.
+      <br><br>
+      If you are ready, fill out and submit the form below.</a>
+
+   <a href="https://image.slidesharecdn.com/dog-adoption-app-masterc-1273094464-phpapp01/95/catbugs-dog-adoption-1-728.jpg?cb=1273076554" target="_blank" class="download scrollspy btn1 white-text waves-effect waves-light"  id="form">DOWNLOAD FORM</a>
+   <a href="https://www.slideshare.net/upload" target="_blank" class="submitapp btn3 waves-effect waves-light scrollspy" >SUBMIT APPLICATION</a>
+      <h1 class="f1 black-text" style="font-size:3vw; position:absolute; margin: 5% 37%; white-space: nowrap;">READY TOO ADOPT?</h1>
+
+      <img src="images/dog.jpg" id="adopt" class="scrollspy" style="height: auto; width: 100%; margin: 0%; opacity: 0.8; position:relative;">
+         
+</div>
+
+   <!-- footer -->
+   <footer class="page-footer" style="background-color: #322D31;">
+      <div class="container">
+         <div class="row">
+            <div class="col s2 l2 push-s1">
+               <a href="#search" class="footr white-text" >SEARCH A PET</a>
+            </div>
+            <div class="col s2 l2 push-l1 push-s1">
+               <a href="#about" class="footr white-text" >ABOUT US</a>
+            </div>
+            <div class="col s2 l2 push-l1 push-s1">
+               <a href="#do i" class="footr white-text" >CONTACT</a>
+            </div>
+            <div class="col s2 l2 push-l1 push-s1">
+               <a href="#privacy" class="footr white-text" >PRIVACY POLICY</a>
+            </div>
+            <div class="col s2 l3 push-l2 push-s1">
+               <a href="#terms" class="footr white-text">TERMS & CONDITIONS</a>
+            </div>
+         </div>
+
+         <div class="row">
+            <ul>
+               <li>
+                  <center><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter-square fa-3x"></i></a>
+                     <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-3x"></i></a>
+                     <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube fa-3x"></i></a>
+                     <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok fa-3x"></i></a>
+                     <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-3x"></i></a></center>
+               </li>
+            </ul>
+         </div>
+
+         <div class="row">
+            <center><img class="logofoot" src="images/petopia.png" width="100" height="auto"></center>
+         </div>
+
+      </div>
+
+      <div class="footer-copyright grey darken-4">
+         <div class="container center-align">&copy; 2021 Geosanna Kho</div>
+      </div>
+
+   </footer>
+   
+
+   <!-- JQuery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <!-- Google Maps -->
+   <script
+      src="https://maps.googleapis.com/maps/api/js?AIzaSyAhmYbaJremcmWwT-UCKlRmfwYraVtOVfY&callback=initMap&libraries=&v=weekly"
+      async
+   ></script>
+   
+   <script>
+      $(document).ready(function(){
+         $('.sidenav').sidenav();
+         $('.materialboxed').materialbox();
+         $('.parallax').parallax();
+         $('.tabs').tabs();
+         $('.datepicker').datepicker({
+            disableWeekends: true
+         });
+         $('.scrollspy').scrollSpy();
+         $('.carousel.carousel-slider').carousel({
+            fullWidth: true,
+            indicators: true
+         });
+
+   // move next carousel
+         $('.moveNextCarousel').click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            $('.carousel').carousel('next');
+         });
+
+   // move prev carousel
+         $('.movePrevCarousel').click(function(e){
+            e.preventDefault();
+            e.stopPropagation();
+            $('.carousel').carousel('prev');
+         });
+            $('.input-field').input-field();
+         
+         });
+         
+
+   // Collapsible
+         $(document).ready(function(){
+            $('.collapsible').collapsible();
+         });
+   </script>
+   
+
+</body>
+</html>

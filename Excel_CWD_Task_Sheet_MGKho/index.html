@@ -1,0 +1,331 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <link rel="stylesheet" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+   <!-- Font Awesome -->
+   <script src="https://kit.fontawesome.com/82616bef6b.js" crossorigin="anonymous"></script>
+   <!-- Font Used - Lora-->
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&family=Yanone+Kaffeesatz:wght@500&display=swap" rel="stylesheet">
+   <!-- Charts from CanvasJS -->
+   <script>
+      window.onload = function () {
+      
+      var chart = new CanvasJS.Chart("chartContainer", {
+         theme: "light2", // "light1", "light2", "dark1", "dark2"
+         animationEnabled: true,
+         title: {
+            text: "Sports Car Prices Over The Years"
+         },
+         axisY: {
+            title: "Price(USD) x 100,000",
+            prefix: "$"
+         },
+         data: [{
+            type: "rangeColumn",
+            yValueFormatString: "$#,##0.00",
+            xValueFormatString: "MMM YYYY",
+            toolTipContent: "{x}<br>High: {y[0]}<br>Low: {y[1]}",
+            dataPoints: [		
+               { x: new Date(2018, 0), y: [27100000, 38990000] },
+               { x: new Date(2018, 3), y: [29920000, 37000000] },
+               { x: new Date(2018, 7), y: [35950000, 42540000] },
+               { x: new Date(2018, 11), y: [37270000, 48500000] },
+               { x: new Date(2019, 3), y: [43330000, 50510000] },
+               { x: new Date(2019, 7), y: [46690000, 52860000] },
+               { x: new Date(2019, 11), y: [41800000, 50750000] },
+               { x: new Date(2019, 3), y: [41510000, 51220000] },
+               { x: new Date(2020, 7), y: [45090000, 50140000] },
+               { x: new Date(2020, 11), y: [47980000, 53730000] },
+               { x: new Date(2020, 3), y: [43570000, 50490000] },
+               { x: new Date(2020, 7), y: [51510000, 57890000] }
+            ]
+         }]
+      });
+      chart.render();
+      
+      }
+      </script>
+
+      
+
+   <title>Excel_CWD_Task_Sheet_MGKho</title>
+
+   <style>
+      header{
+         background: url(images/carcover.jpg);
+         background-size: cover;
+         background-position: center;
+         min-height: 1000px;
+      }
+      .section{
+         padding-top: 4vw;
+         padding-bottom: 4vw;
+         font-family: 'Lora', serif;
+      }
+      .text-wrapper{
+         position: absolute;
+         margin-top: -45%
+      }
+      .text-wrapper h1{
+         text-align: left;
+         color: white;
+         font-size: 5vw;
+         font-family: 'Lora', serif;
+      }
+      .tabs .indicator{
+         background-color: purple;
+      }
+      .tabs .tab a:focus, .tabs .tab a:focus.active{
+         background: transparent;
+      }
+      .input-field .prefix.active{
+         color: red;
+      }
+      @media screen and (max-width: 1000px){
+         header{
+            min-height: 500px;
+         }
+      }
+   </style>
+
+</head>
+<body>
+
+
+   <!-- navbar -->
+   <header>
+      <div class="navbar-fixed">
+      <nav class="nav-wrapper black">
+         <div class="container">
+            <a href="#" class="brand-logo">Geo News</a>
+            <a href="" class="sidenav-trigger" data-target="mobile-menu">
+               <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+               <li><a href="#photos" class="">Photos</a></li>
+               <li><a href="#statistics" class="">Statistics</a></li>
+               <li><a href="#contact" class="">Contact</a></li>
+               
+               <!-- tooltips -->
+               <li><a href="#" class="tooltip btn-floating btn-small indigo darken-4" data-tooltip="Instagram">
+                  <i class="fab fa-instagram text-white black"></i>
+               </a></li>
+               <li><a href="#" class="tooltip btn-floating btn-small indigo darken-4" data-tooltip="Facebook">
+                  <i class="fab fa-facebook text-white black"></i>
+               </a></li>
+               <li><a href="#" class="tooltip btn-floating btn-small indigo darken-4" data-tooltip="Twitter">
+                  <i class="fab fa-twitter text-white black"></i>
+               </a></li>
+            </ul>
+      </div>
+   </div>  
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+               <li><a href="#photos" class="">Photos</a></li>
+               <li><a href="#statistics" class="">Statistics</a></li>
+               <li><a href="#contact" class="">Contact</a></li>
+            </ul>
+      </nav>
+   
+   </header>
+
+   <div class="container">
+      <div class="text-wrapper">
+         <h1>TOP SPORTS CAR
+            <br>
+            2021
+         </h1>
+      </div>
+   </div>
+
+   <!-- photo / grid -->
+   <section class="container section scrollspy" id="photos">
+      <!-- 1st row -->
+      <div class="row">
+         <div class="col s12 l4">
+            <img src="images/alpine.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l3">
+            <h2 class="black-text text-darken-4">Alpine A110</h2>
+         </div>
+         <div>
+            <div class="col s12 l5">
+               <h2 class="black-text"></h2>
+               <p>Drawing from a rich history of rear-engined sports and racing cars, the latest Alpine A110 is styled to look and feel much like the French brand’s iconic sixties offering of the same name. But with a mid-mounted turbocharged four-cylinder engine, dual-clutch gearbox and a perfectly judged chassis, the A110 is far more modern than its retro-styled bodywork may have you believe.</p>
+            </div>
+         </div>
+      </div>
+      <!-- 2nd row -->
+      <div class="row">
+         <div class="col s12 l4 push-l8">
+            <img src="images/bmw.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l3 right-align push-l1">
+            <h2 class="green-text text-darken-4">BMW M3/M4</h2>
+         </div>
+         <div>
+            <div class="col s12 l5 pull-l7 right-align">
+               <h2 class="black-text"></h2>
+               <p>Divisive looks aside, the latest versions of BMW’s M3 saloon and M4 coupe continue their tradition of mastering both road and track, while all wrapped up in a package that’s easy to use as an everyday car, should you choose to.</p>
+            </div>
+         </div>
+      </div>
+      <!-- 3rd row -->
+      <div class="row">
+         <div class="col s12 l4">
+            <img src="images/mclaren.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l3">
+            <h2 class="orange-text text-darken-4">McLaren 720S</h2>
+         </div>
+         <div>
+            <div class="col s12 l5">
+               <h2 class="black-text"></h2>
+               <p>The 720S was designed with the likes of the Lamborghini Huracan and the Ferrari 488 firmly in its sights, and taking on these two goliath brands is not an easy feat for most. Fortunately for McLaren, an abundance of technological expertise and long-standing motorsport pedigree have helped shape the 720S into a fearsome opponent.</p>
+            </div>
+         </div>
+      </div>
+      <!-- 4th row -->
+      <div class="row">
+         <div class="col s12 l4 push-l8">
+            <img src="images/toyotasupra.jpg" alt="" class="responsive-img materialboxed">
+         </div>
+         <div class="col s12 l3 right-align push-l1">
+            <h2 class="silver-text text-darken-4">Toyota GR Supra</h2>
+         </div>
+         <div>
+            <div class="col s12 l5 pull-l7 right-align">
+               <h2 class="black-text"></h2>
+               <p>The Toyota Supra’s return has been a controversial one. 17 years after the much-loved Mk4 Supra ended production, Toyota finally brought back the Supra name. While the internet may have briefly been in uproar over the amount of input BMW had during development, no one can deny the new Supra is an exquisite driver’s car.</p>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Parallax -->
+   <div class="parallax-container">
+      <div class="parallax">
+         <img src="images/reacetrack.jpg" alt="" class="responsive-img">
+      </div>
+   </div>
+
+   <!-- Services and Tabs -->
+   <section class="container section scrollspy" id="statistics">
+      <div class="row">
+         <div class="col s12 l4">
+            <h2 class="black-text darken-4">Statistics</h2>
+            <p>Sports Cars accounted for 1.4% of the worldwide market revenue in 2019. This is a -0.4% growth compared to market share in 2014. The highest revenue share of Sports Cars sales in 2019 were generated in the Netherlands (9.5%) and Switzerland (7.2%). The best-performing make in the Sports Cars segment in 2019 was Porsche (revenue of US$6.2 billion), followed by Ford (US$ 4.9 billion) and Chevrolet (US$4.1 billion).</p>
+         </div>
+         <div class="col s12 l6 offset-l2">
+            <ul class="tabs">
+               <li class="tab col s6">
+                  <a href="#chart" class="indigo-text text-darken waves-effect waves-purple">Chart</a>
+               </li>
+               <li class="tab col s6">
+                  <a href="#contact" class="indigo-text text-darken waves-effect waves-green">Contact</a>
+               </li>
+            </ul>
+            <div class="col s12 scrollspy" id="chart">
+               <p class="flow-text indigo-text text-darken-4">CHART</p>
+                  <div id="chartContainer" style="height: 370px; width: 100%;">
+                  </div>
+            </div>
+            <div class="col s12 scrollspy" id="contact">
+               <p class="flow-text indigo-text text-darken-4">CONTACT</p>
+               <form action="">
+                  <div class="input-field">
+                     <i class="material-icons prefix">email</i>
+                     <input type="email" id="email">
+                     <label for="email">Your Email</label>
+                  </div>
+                  <div class="input-field">
+                     <i class="material-icons prefix">message</i>
+                     <textarea id="message" class="materialize-textarea" cols="30" rows="10"></textarea>
+                     <label for="message">Your Message</label>
+                  </div>
+                  <div class="input-field">
+                     <input type="text" id="date" class="datepicker">
+                     <label for="date">Choose an appointment</label>
+                  </div>
+                  <div class="input-field">
+                     <p>Services Required...</p>
+                     <p>
+                        <label>
+                           <input type="checkbox">
+                           <span>Car Parts Overhaul</span>
+                        </label>
+                     </p>
+                     <p>
+                        <label>
+                           <input type="checkbox">
+                           <span>Consultation</span>
+                        </label>
+                     </p>
+                  </div>
+                  <div class="input-field center">
+                     <button class="btn">Submit</button>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- footer -->
+   <footer class="page-footer black">
+      <div class="container">
+         <div class="row">
+            <div class="col s12 l6">
+               <h5>About Us</h5>
+               <p>I am one of the leading supercar and sports car consultants in the world.</p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+               <h5>Connect</h5>
+               <ul>
+                  <li><a href="#" class="grey-text lighten-3">Facebook</a></li>
+                  <li><a href="#" class="grey-text lighten-3">Twitter</a></li>
+                  <li><a href="#" class="grey-text lighten-3">Linkedin</a></li>
+                  <li><a href="#" class="grey-text lighten-3">Instagram</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <div class="footer-copyright grey darken-4">
+         <div class="container center-align">&copy; 2021 Photo Kho</div>
+      </div>
+   </footer>
+
+   <!-- JQuery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <!-- Charts from CanvasJS -->
+   <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+   
+   <script>
+      $(document).ready(function(){
+         $('.sidenav').sidenav();
+         $('.materialboxed').materialbox();
+         $('.parallax').parallax();
+         $('.tabs').tabs();
+         $('.datepicker').datepicker({
+            disableWeekends: true
+         });
+         $('.tooltip').tooltip();
+         $('.scrollspy').scrollSpy();
+         $('.input-field').input-field();
+         
+      });
+   </script>
+   
+
+</body>
+</html>

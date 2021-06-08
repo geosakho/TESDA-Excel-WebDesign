@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+           
+   <title>UC 3 LO 3.5 - Modals - MGKho</title>
+
+</head>
+<body>
+
+   <div class="container">
+      <h1>UC 3 LO 3.5 - Modals - MGKho</h1>
+      <h4>Modals</h4>
+
+      <a href="#terms" class="btn orange modal-trigger">Terms & Conditions</a>
+
+      <div class="modal" id="terms">
+         <div class="modal-content">
+            <h4>Terms and Conditions</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel accusantium quam magni ratione beatae, ut quo ullam cumque fuga ea explicabo molestiae cupiditate quaerat, nam blanditiis iure saepe esse voluptatum!</p>
+         </div>
+         <div class="modal-footer">
+            <a href="#" class="modal-close btn orange">Agree & Close</a>
+         </div>
+      </div>
+
+   </div>
+
+   <!-- JQuery CDN-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+   <script>
+      $(document).ready(function(){
+         $('.modal').modal()
+      })
+   </script>
+
+</body>
+</html>
